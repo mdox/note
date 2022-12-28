@@ -1,5 +1,6 @@
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
+import { appWithTranslation } from "next-i18next";
 import { type AppType } from "next/app";
 import Layout from "../layouts/Layout";
 import "../styles/globals.css";
@@ -18,4 +19,4 @@ const MyApp: AppType<{ session: Session | null }> = ({
   );
 };
 
-export default trpc.withTRPC(MyApp);
+export default trpc.withTRPC(appWithTranslation(MyApp));

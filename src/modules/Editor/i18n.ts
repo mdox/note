@@ -1,0 +1,27 @@
+export const i18n = {
+  "toolbar.block.paragraph": "editor.toolbar.block.paragraph",
+  "toolbar.block.h1": "editor.toolbar.block.h1",
+  "toolbar.block.h2": "editor.toolbar.block.h2",
+  "toolbar.block.h3": "editor.toolbar.block.h3",
+  "toolbar.block.h4": "editor.toolbar.block.h4",
+  "toolbar.block.h5": "editor.toolbar.block.h5",
+  "toolbar.block.h6": "editor.toolbar.block.h6",
+  "toolbar.block.bullet": "editor.toolbar.block.bullet",
+  "toolbar.block.number": "editor.toolbar.block.number",
+  "toolbar.block.check": "editor.toolbar.block.check",
+  "toolbar.block.quote": "editor.toolbar.block.quote",
+  "toolbar.block.code": "editor.toolbar.block.code",
+
+  "toolbar.format.strikethrough": "editor.toolbar.format.strikethrough",
+  "toolbar.format.subscript": "editor.toolbar.format.subscript",
+  "toolbar.format.superscript": "editor.toolbar.format.superscript",
+  "toolbar.format.clearFormatting": "editor.toolbar.format.clearFormatting",
+
+  "toolbar.align.align": "editor.toolbar.align.align",
+  "toolbar.align.alignLeft": "editor.toolbar.align.alignLeft",
+  "toolbar.align.alignCenter": "editor.toolbar.align.alignCenter",
+  "toolbar.align.alignRight": "editor.toolbar.align.alignRight",
+  "toolbar.align.alignJustify": "editor.toolbar.align.alignJustify",
+  "toolbar.align.outdent": "editor.toolbar.align.outdent",
+  "toolbar.align.indent": "editor.toolbar.align.indent",
+} as const;

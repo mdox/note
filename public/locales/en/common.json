@@ -1,5 +1,31 @@
 {
   "button.make-note": "Make Note",
 
+  "editor.toolbar.block.paragraph": "Normal",
+  "editor.toolbar.block.h1": "Heading 1",
+  "editor.toolbar.block.h2": "Heading 2",
+  "editor.toolbar.block.h3": "Heading 3",
+  "editor.toolbar.block.h4": "Heading 4",
+  "editor.toolbar.block.h5": "Heading 5",
+  "editor.toolbar.block.h6": "Heading 6",
+  "editor.toolbar.block.bullet": "Bullet List",
+  "editor.toolbar.block.number": "Number List",
+  "editor.toolbar.block.check": "Check List",
+  "editor.toolbar.block.quote": "Quote",
+  "editor.toolbar.block.code": "Code Block",
+
+  "editor.toolbar.format.strikethrough": " ASD Strikethrough",
+  "editor.toolbar.format.subscript": "Subscript",
+  "editor.toolbar.format.superscript": "Superscript",
+  "editor.toolbar.format.clearFormatting": "Clear Formatting",
+
+  "editor.toolbar.align.align": "Align",
+  "editor.toolbar.align.alignLeft": "Left Align",
+  "editor.toolbar.align.alignCenter": "Center Align",
+  "editor.toolbar.align.alignRight": "Right Align",
+  "editor.toolbar.align.alignJustify": "Justify Align",
+  "editor.toolbar.align.outdent": "Outdent",
+  "editor.toolbar.align.indent": "Indent",
+
   "dashboard.title": "Dashboard"
 }

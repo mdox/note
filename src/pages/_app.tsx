@@ -4,6 +4,7 @@ import { appWithTranslation } from "next-i18next";
 import { type AppType } from "next/app";
 import { AfterHydrationProvider } from "../features/AfterHydration/AfterHydration";
 import Layout from "../layouts/Layout";
+import { EditorProvider } from "../modules/Editor";
 import "../styles/globals.css";
 import { trpc } from "../utils/trpc";
 
@@ -15,7 +16,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       <AfterHydrationProvider>
         <Layout>
-          <Component {...pageProps} />
+          <EditorProvider>
+            <Component {...pageProps} />
+          </EditorProvider>
         </Layout>
       </AfterHydrationProvider>
     </SessionProvider>

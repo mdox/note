@@ -1,0 +1,144 @@
+.ET {
+  @apply relative;
+}
+
+.ET :global(.ET__ltr) {
+  @apply text-left;
+}
+.ET :global(.ET__rtl) {
+  @apply text-right;
+}
+.ET :global(.ET__paragraph) {
+  @apply m-0 p-0;
+}
+
+.ET :global(.ET__h1) {
+  @apply text-3xl;
+}
+.ET :global(.ET__h2) {
+  @apply text-2xl;
+}
+.ET :global(.ET__h3) {
+  @apply text-xl;
+}
+.ET :global(.ET__h4) {
+  @apply text-lg font-semibold;
+}
+.ET :global(.ET__h5) {
+  @apply text-lg;
+}
+.ET :global(.ET__h6) {
+  @apply text-base font-semibold;
+}
+
+.ET :global(.ET__link) {
+  @apply text-blue-400 no-underline hover:underline;
+}
+
+.ET :global(.ET__listItem) {
+  @apply mx-0;
+}
+.ET :global(.ET__listItemChecked),
+.ET :global(.ET__listItemUnchecked) {
+  @apply relative mr-2 list-none px-6 outline-none;
+}
+.ET :global(.ET__listItemChecked) {
+  @apply line-through;
+}
+.ET :global(.ET__listItemUnchecked):before,
+.ET :global(.ET__listItemChecked):before {
+  @apply absolute top-1/2 left-0 block h-4 w-4 -translate-y-1/2 cursor-pointer bg-cover content-[""];
+}
+.ET :global(.ET__listItemUnchecked)[dir="rtl"]:before,
+.ET :global(.ET__listItemChecked)[dir="rtl"]:before {
+  @apply left-auto right-0;
+}
+.ET :global(.ET__listItemUnchecked):focus:before,
+.ET :global(.ET__listItemChecked):focus:before {
+  @apply rounded outline-none outline-1 outline-offset-2 outline-gray-300;
+}
+.ET :global(.ET__listItemUnchecked):before {
+  @apply rounded border border-gray-600;
+}
+.ET :global(.ET__listItemChecked):before {
+  @apply rounded bg-blue-400 bg-no-repeat;
+}
+.ET :global(.ET__nestedListItem) {
+  @apply list-none;
+}
+.ET :global(.ET__nestedListItem.ET__listItemUnchecked),
+.ET :global(.ET__nestedListItem.ET__listItemChecked) {
+  @apply pl-2;
+}
+.ET :global(.ET__nestedListItem):before,
+.ET :global(.ET__nestedListItem):after {
+  @apply hidden;
+}
+.ET :global(.ET__ol1) {
+  @apply m-0 ml-4 list-inside list-decimal p-0;
+}
+.ET :global(.ET__ol2) {
+  @apply m-0 ml-4 list-inside list-[upper-alpha] p-0;
+}
+.ET :global(.ET__ol3) {
+  @apply m-0 ml-4 list-inside list-[lower-alpha] p-0;
+}
+.ET :global(.ET__ol4) {
+  @apply m-0 ml-4 list-inside list-[upper-roman] p-0;
+}
+.ET :global(.ET__ol5) {
+  @apply m-0 ml-4 list-inside list-[lower-roman] p-0;
+}
+.ET :global(.ET__ul1) {
+  @apply m-0 ml-4 list-inside list-disc p-0;
+}
+.ET :global(.ET__ul2) {
+  @apply m-0 ml-4 list-inside list-[circle] p-0;
+}
+.ET :global(.ET__ul3) {
+  @apply m-0 ml-4 list-inside list-[square] p-0;
+}
+.ET :global(.ET__ul4) {
+  @apply m-0 ml-4 list-inside list-[square] p-0;
+}
+.ET :global(.ET__ul5) {
+  @apply m-0 ml-4 list-inside list-[square] p-0;
+}
+.ET :global(.ET__ul) {
+  @apply m-0 ml-4 list-inside p-0;
+}
+
+.ET :global(.ET__quote) {
+  @apply m-4 rounded border-l-[0.5rem] border-l-green-500 bg-gray-700 px-3 py-1;
+}
+
+.ET :global(.ET__code) {
+  @apply m-0 block rounded-lg border border-gray-500 bg-gray-700 px-3 py-2 font-mono text-sm;
+}
+
+.ET :global(.ET__textBold) {
+  @apply font-bold;
+}
+.ET :global(.ET__textItalic) {
+  @apply italic;
+}
+.ET :global(.ET__textUnderline) {
+  @apply underline;
+}
+.ET :global(.ET__textCode) {
+  @apply rounded-lg border border-gray-500 bg-gray-700 px-1.5 pt-1 pb-0.5 font-mono text-sm;
+}
+.ET :global(.ET__textStrikethrough) {
+  @apply line-through;
+}
+.ET :global(.ET__textUnderlineStrikethrough) {
+  text-decoration: underline line-through;
+}
+.ET :global(.ET__textSubscript) {
+  font-size: 0.8em;
+  vertical-align: sub !important;
+}
+.ET :global(.ET__textSuperscript) {
+  font-size: 0.8em;
+  vertical-align: super;
+}

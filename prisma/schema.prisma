@@ -9,7 +9,36 @@ datasource db {
 
 // ...
 
-// 
+model Note {
+  id          Int       @id @default(autoincrement())
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  docs        Doc[]
+  comments    Comment[]
+  title       String    @default("")
+  desc        String    @default("")
+  bodyHtml    String    @default("")
+  bodyJson    String    @default("")
+  stage       String
+  publishedAt String    @default("")
+}
+
+model Doc {
+  path   String @unique
+  note   Note   @relation(fields: [noteId], references: [id], onDelete: Cascade)
+  noteId Int
+  stage  String
+}
+
+model Comment {
+  id        Int    @id @default(autoincrement())
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  note      Note   @relation(fields: [noteId], references: [id], onDelete: Cascade)
+  noteId    Int
+  bodyHtml  String
+  createdAt String
+}
 
 // ...
 
@@ -45,6 +74,8 @@ model User {
   email    String    @unique
   accounts Account[]
   sessions Session[]
+  notes    Note[]
+  comments Comment[]
 }
 
 model VerificationToken {

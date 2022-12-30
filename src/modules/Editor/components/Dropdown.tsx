@@ -36,7 +36,7 @@ export default function Dropdown(props: DropdownProps) {
               ref={setButton}
               type="button"
               disabled={props.disabled}
-              className="inline-flex items-center justify-center gap-2 rounded px-3 py-2 text-sm outline-none ring-inset ring-gray-500 enabled:hover:bg-gray-700 enabled:focus:ring-2 enabled:active:bg-gray-800 disabled:opacity-50"
+              className="inline-flex items-center justify-center gap-2 rounded px-3 py-2 text-sm outline-none ring-gray-500 enabled:hover:bg-gray-700 enabled:focus:ring-2 enabled:active:bg-gray-800 disabled:opacity-50"
             >
               {props.icon && <Icon path={props.icon} size={0.75} />}
               {props.text}
@@ -75,7 +75,7 @@ export function DropdownItem(props: DropdownItemProps) {
           <button
             type="button"
             className={clsx(
-              "flex w-full items-center justify-start gap-2 rounded px-3 py-2 text-sm outline-none ring-inset ring-gray-500 enabled:hover:bg-gray-700 enabled:focus:ring-2 enabled:active:bg-gray-800 disabled:opacity-50",
+              "flex w-full items-center justify-start gap-2 rounded px-3 py-2 text-sm outline-none ring-gray-500 enabled:hover:bg-gray-700 enabled:focus:ring-2 enabled:active:bg-gray-800 disabled:opacity-50",
               active && "ring-2",
               props.highlighted && "bg-gray-700 font-semibold"
             )}

@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Stage } from "../../../utils/consts";
+import sanitizeHtml from "../../../utils/sanitizeHtml";
 import { protectedProcedure, router } from "../trpc";
 
 export const viewRouter = router({
@@ -67,7 +68,7 @@ export const viewRouter = router({
         data: {
           noteId: input.noteId,
           userId: ctx.session.user.id,
-          bodyHtml: input.bodyHtml,
+          bodyHtml: sanitizeHtml(input.bodyHtml),
           createdAt: new Date().toISOString(),
         },
       });

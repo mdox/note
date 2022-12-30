@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { env } from "../../../env/server.mjs";
 import { Stage } from "../../../utils/consts";
+import sanitizeHtml from "../../../utils/sanitizeHtml";
 import { protectedProcedure, router } from "../trpc";
 
 export const editRouter = router({
@@ -24,7 +25,9 @@ export const editRouter = router({
         data: {
           title: input.title,
           desc: input.desc,
-          bodyHtml: input.bodyHtml,
+          ...(input.bodyHtml !== undefined
+            ? { bodyHtml: sanitizeHtml(input.bodyHtml) }
+            : {}),
           bodyJson: input.bodyJson,
           docs: {
             updateMany: {

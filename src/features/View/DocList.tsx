@@ -69,16 +69,22 @@ function Images() {
   return images.length === 0 ? null : (
     <div className="flex flex-nowrap gap-2 overflow-y-hidden overflow-x-scroll pb-2">
       {images.map(({ path }) => (
-        <span key={path} className="inline-flex w-40 shrink-0 flex-col gap-2">
+        <span key={path} className="relative h-40 w-40 shrink-0">
           <Link href={path} target="_blank" rel="noopener noreferrer">
             <Image
               src={path}
               alt={formatBasename(path)}
               width={160}
               height={160}
-              className="block h-40 object-cover object-center"
+              className="h-full w-full object-cover object-center"
             />
           </Link>
+          <span className="absolute top-0 left-0 right-0 p-2">
+            <br />
+            <span className="absolute inset-0 select-none overflow-hidden text-ellipsis whitespace-nowrap rounded p-2 font-light ring-inset ring-gray-600 hover:right-auto hover:z-[9999] hover:select-auto hover:overflow-visible hover:bg-gray-900 hover:ring-2">
+              {formatBasename(path)}
+            </span>
+          </span>
         </span>
       ))}
     </div>

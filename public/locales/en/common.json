@@ -6,11 +6,13 @@
   "button.back": "Back",
   "button.save": "Save",
   "button.publish": "Publish",
+  "button.edit": "Edit",
 
   "confirm.delete": "Confirm delete.",
   "confirm.discard": "Confirm discard.",
 
   "title.documents": "Documents",
+  "title.comments": "Comments",
 
   "info.no-documents": "No documents...",
 
@@ -42,5 +44,7 @@
 
   "dashboard.title": "Dashboard",
 
-  "edit.title": "Edit"
+  "edit.title": "Edit",
+
+  "view.title": "View"
 }

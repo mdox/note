@@ -233,7 +233,10 @@ function DocItem({ path, stage }: DocItemProps) {
         target="_blank"
         rel="noopener noreferrer"
         download={formatBasename(path)}
-        className="inline-flex grow items-center gap-2 rounded px-3 py-2 hover:bg-gray-700 active:bg-gray-800"
+        className={clsx(
+          "inline-flex grow items-center gap-2 rounded px-3 py-2 hover:bg-gray-700 active:bg-gray-800",
+          selected && "bg-gray-600"
+        )}
       >
         <Icon
           path={mdiFileDocument}
@@ -247,7 +250,7 @@ function DocItem({ path, stage }: DocItemProps) {
           </span>
         </span>
       </Link>
-      <Button onClick={handleToggleSelect}>
+      <Button primary={selected} onClick={handleToggleSelect}>
         <Icon
           path={selected ? mdiCheckboxMarked : mdiCheckboxBlank}
           size={0.75}

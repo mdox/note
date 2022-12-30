@@ -1,0 +1,50 @@
+{
+  "button.make-note": "Új Jegyzet",
+  "button.attach-document": "Dokumentum Csatolása",
+  "button.detach-document": "Dokumentum Leválasztása",
+  "button.delete": "Törlés",
+  "button.back": "Vissza",
+  "button.save": "Mentés",
+  "button.publish": "Publikál",
+  "button.edit": "Szerkeszt",
+
+  "confirm.delete": "Törlés megerősítése.",
+  "confirm.discard": "Elvetés megerősítése.",
+
+  "title.documents": "Dokumentumok",
+  "title.comments": "Hozzászólások",
+
+  "info.no-documents": "Nincs dokumentum...",
+
+  "editor.toolbar.block.paragraph": "Normál",
+  "editor.toolbar.block.h1": "Cím 1",
+  "editor.toolbar.block.h2": "Cím 2",
+  "editor.toolbar.block.h3": "Cím 3",
+  "editor.toolbar.block.h4": "Cím 4",
+  "editor.toolbar.block.h5": "Cím 5",
+  "editor.toolbar.block.h6": "Cím 6",
+  "editor.toolbar.block.bullet": "Golyó Lista",
+  "editor.toolbar.block.number": "Számlista",
+  "editor.toolbar.block.check": "Ellenőrző Lista",
+  "editor.toolbar.block.quote": "Idézet",
+  "editor.toolbar.block.code": "Kódblokk",
+
+  "editor.toolbar.format.strikethrough": "Áthúzás",
+  "editor.toolbar.format.subscript": "Alsó Index",
+  "editor.toolbar.format.superscript": "Felső Index",
+  "editor.toolbar.format.clearFormatting": "Formázás Törlése",
+
+  "editor.toolbar.align.align": "Igazítás",
+  "editor.toolbar.align.alignLeft": "Balra Igazít",
+  "editor.toolbar.align.alignCenter": "Középre Igazít",
+  "editor.toolbar.align.alignRight": "Jobbra Igazít",
+  "editor.toolbar.align.alignJustify": "Egyenlő Igazítás",
+  "editor.toolbar.align.outdent": "Behúzás",
+  "editor.toolbar.align.indent": "Kihagyás",
+
+  "dashboard.title": "Irányítópult",
+
+  "edit.title": "Szerkeszt",
+
+  "view.title": "Nézet"
+}

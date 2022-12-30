@@ -3,6 +3,9 @@ import { SessionProvider } from "next-auth/react";
 import { appWithTranslation } from "next-i18next";
 import { type AppType } from "next/app";
 import { AfterHydrationProvider } from "../features/AfterHydration/AfterHydration";
+import GlobalLoading, {
+  GlobalLoadingProvider,
+} from "../features/GlobalLoading/GlobalLoading";
 import Layout from "../layouts/Layout";
 import { EditorProvider } from "../modules/Editor";
 import "../styles/globals.css";
@@ -15,11 +18,14 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <AfterHydrationProvider>
-        <Layout>
-          <EditorProvider>
-            <Component {...pageProps} />
-          </EditorProvider>
-        </Layout>
+        <GlobalLoadingProvider>
+          <Layout>
+            <EditorProvider>
+              <Component {...pageProps} />
+            </EditorProvider>
+          </Layout>
+          <GlobalLoading />
+        </GlobalLoadingProvider>
       </AfterHydrationProvider>
     </SessionProvider>
   );

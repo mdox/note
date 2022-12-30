@@ -1,6 +1,10 @@
 import { mdiLoading } from "@mdi/js";
 import Icon from "@mdi/react";
-import { useIsFetching, useIsRestoring } from "@tanstack/react-query";
+import {
+  useIsFetching,
+  useIsMutating,
+  useIsRestoring,
+} from "@tanstack/react-query";
 import clsx from "clsx";
 import {
   createContext,
@@ -66,7 +70,7 @@ export function useGlobalLoading() {
 
 export default function GlobalLoading() {
   const isFetching = useIsFetching();
-  const isMutating = useIsFetching();
+  const isMutating = useIsMutating();
   const isRestoring = useIsRestoring();
   const globalLoading = useGlobalLoading();
 

@@ -43,6 +43,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "^12.1.1",
     "sanitize-html": "^2.8.1",
+    "sharp": "^0.31.3",
     "superjson": "1.9.1",
     "tailwind-merge": "^1.8.1",
     "yjs": "^13.5.43",

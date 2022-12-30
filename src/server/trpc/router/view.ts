@@ -60,7 +60,7 @@ export const viewRouter = router({
     .input(
       z.object({
         noteId: z.number(),
-        bodyHtml: z.string(),
+        bodyHtml: z.string().max(8192),
       })
     )
     .mutation(async ({ ctx, input }) => {

@@ -7,7 +7,7 @@ export default function Document(props: DocumentProps) {
   return (
     <Html lang={locale ?? defaultLocale}>
       <Head />
-      <body className="bg-gray-900 font-sans text-base text-gray-50">
+      <body className="overflow-y-scroll bg-gray-900 font-sans text-base text-gray-50">
         <Main />
         <NextScript />
       </body>

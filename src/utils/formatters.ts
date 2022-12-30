@@ -1,3 +1,7 @@
+export const formatBasename = (path: string) => {
+  return path.split("/").slice(-1).join("");
+};
+
 export const formatDateTime = (value: Date | string) => {
   const date = value instanceof Date ? value : new Date(value);
 

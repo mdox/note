@@ -1,0 +1,7 @@
+version: "3.0"
+
+services:
+  ss:
+    image: mardox/minimal-storage-server:2.1
+    ports:
+      - 48000:8000

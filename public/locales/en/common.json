@@ -1,5 +1,18 @@
 {
   "button.make-note": "Make Note",
+  "button.attach-document": "Attach Document",
+  "button.detach-document": "Detach Document",
+  "button.delete": "Delete",
+  "button.back": "Back",
+  "button.save": "Save",
+  "button.publish": "Publish",
+
+  "confirm.delete": "Confirm delete.",
+  "confirm.discard": "Confirm discard.",
+
+  "title.documents": "Documents",
+
+  "info.no-documents": "No documents...",
 
   "editor.toolbar.block.paragraph": "Normal",
   "editor.toolbar.block.h1": "Heading 1",
@@ -27,5 +40,7 @@
   "editor.toolbar.align.outdent": "Outdent",
   "editor.toolbar.align.indent": "Indent",
 
-  "dashboard.title": "Dashboard"
+  "dashboard.title": "Dashboard",
+
+  "edit.title": "Edit"
 }

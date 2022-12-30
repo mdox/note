@@ -13,5 +13,13 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   i18n: i18nConfig.i18n,
+  async rewrites() {
+    return [
+      {
+        source: `/api/storage/download/:path*`,
+        destination: `${process.env.STORAGE_SERVER_URL}/download/:path*`,
+      },
+    ];
+  },
 };
 export default config;

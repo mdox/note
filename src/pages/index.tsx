@@ -1,5 +1,5 @@
+import { useTranslation } from "next-i18next";
 import Head from "next/head";
-import { useTranslation } from "react-i18next";
 import { AfterHydration } from "../features/AfterHydration/AfterHydration";
 import Dashboard from "../features/Dashboard/Dashboard";
 import shipTranslations from "../utils/shipTranslations";

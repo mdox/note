@@ -2,6 +2,7 @@ import { mdiCheckboxBlank, mdiCheckboxMarked, mdiFileDocument } from "@mdi/js";
 import Icon from "@mdi/react";
 import clsx from "clsx";
 import mime from "mime-types";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,7 +14,6 @@ import {
   useRef,
   useState,
 } from "react";
-import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import { Stage } from "../../utils/consts";
 import { formatBasename } from "../../utils/formatters";

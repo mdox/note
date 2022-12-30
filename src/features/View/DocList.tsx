@@ -1,10 +1,10 @@
 import { mdiFileDocument } from "@mdi/js";
 import Icon from "@mdi/react";
 import mime from "mime-types";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
-import { useTranslation } from "react-i18next";
 import { formatBasename } from "../../utils/formatters";
 import { useViewContext } from "./View";
 

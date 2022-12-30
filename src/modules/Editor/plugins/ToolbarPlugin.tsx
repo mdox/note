@@ -74,8 +74,8 @@ import {
   SELECTION_CHANGE_COMMAND,
   UNDO_COMMAND,
 } from "lexical";
+import { useTranslation } from "next-i18next";
 import { useCallback, useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import type { CommonKey } from "../../../types/i18next";
 import Button from "../components/Button";
 import Dropdown, { DropdownItem } from "../components/Dropdown";

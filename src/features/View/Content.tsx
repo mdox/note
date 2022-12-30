@@ -1,8 +1,8 @@
 import { mdiDotsVertical, mdiNoteEdit } from "@mdi/js";
 import Icon from "@mdi/react";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import Dropdown, { DropdownItem } from "../../components/Dropdown";
 import { EditorThemeStyles } from "../../modules/Editor/themes/EditorTheme/EditorTheme";
 import { formatDateTime } from "../../utils/formatters";

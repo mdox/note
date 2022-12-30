@@ -1,6 +1,6 @@
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
-import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import { trpc } from "../../utils/trpc";
 

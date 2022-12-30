@@ -1,5 +1,5 @@
+import { useTranslation } from "next-i18next";
 import { createContext, useContext, useMemo } from "react";
-import { useTranslation } from "react-i18next";
 import type { RouterOutputs } from "../../utils/trpc";
 import { trpc } from "../../utils/trpc";
 import Commenting from "./Commenting";

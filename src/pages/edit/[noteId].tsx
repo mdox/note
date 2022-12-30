@@ -1,7 +1,7 @@
+import { useTranslation } from "next-i18next";
 import type { WithRouterProps } from "next/dist/client/with-router";
 import Head from "next/head";
 import { withRouter } from "next/router";
-import { useTranslation } from "react-i18next";
 import { AfterHydration } from "../../features/AfterHydration/AfterHydration";
 import Edit from "../../features/Edit/Edit";
 import shipTranslations from "../../utils/shipTranslations";

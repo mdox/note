@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="bg-gray-800 p-2">
         <nav className="mx-auto flex max-w-screen-md justify-between">
           <Link href="/" className="font-quicksand text-3xl">
-            CO-NOTE
+            NOTE
           </Link>
           <Button className="p-2" onClick={() => signOut()}>
             <Icon path={mdiLogout} size={0.875} />
